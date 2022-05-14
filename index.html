@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/root.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+
+
+    <title>Quiz Game</title>
+
+</head>
+<body>
+
+    <h1 class="h1__title-quiz">Quiz Game</h1>
+
+    <main >
+
+
+        <div class="main__container-question">
+
+            <section class="section__question">
+
+                <span id='section__question__num-question'></span>
+                
+                <p id="section__question__text-question"></p>
+
+
+            </section>
+
+
+            <section class="section__alternatives-question">
+
+
+                <ol type='A' id='alternatives'>
+                
+                    <button id='a' value='1' class='alternatives__answer-button' onClick='checkAnswer(this, this, this)'></button>
+                    <button id='b' value='1' class='alternatives__answer-button' onClick='checkAnswer(this, this, this)'></button>
+                    <button id='c' value='1' class='alternatives__answer-button' onClick='checkAnswer(this, this,this)'></button>
+                
+                    <!-- <button class="disabled">asdsadasd</button> -->
+                </ol>
+
+
+            </section>
+
+            <div>
+                <button class="btn-start-quiz">Start Quiz</button>
+                <button class="btn-next-question">Next</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    
+    <script src="./scripts/app.js"></script>
+
+</body>
+</html>
