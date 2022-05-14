@@ -30,37 +30,46 @@
                 
                 <p id="section__question__text-question"></p>
 
-
             </section>
 
+            <section class="section__alternatives-question is--disable">
 
-            <section class="section__alternatives-question">
 
-
-                <ol type='A' id='alternatives'>
+                <div type='A' id='alternatives'>
                 
                     <button id='a' value='1' class='alternatives__answer-button' onClick='checkAnswer(this, this, this)'></button>
+                    <!-- <img class="icon-correct" src="./assets/icon-incorrect.png" alt=""> -->
+
                     <button id='b' value='1' class='alternatives__answer-button' onClick='checkAnswer(this, this, this)'></button>
+                    <!-- <img class="icon-correct" src="./assets/icon-correct.png" alt="">
+                    <img class="icon-incorrect" src="./assets/icon-incorrect.png" alt=""> -->
+
+
+
                     <button id='c' value='1' class='alternatives__answer-button' onClick='checkAnswer(this, this,this)'></button>
                 
                     <!-- <button class="disabled">asdsadasd</button> -->
-                </ol>
+                </div>
 
 
             </section>
 
-            <div>
+            <footer class="footer__control-buttons">
+
                 <button class="btn-start-quiz">Start Quiz</button>
-                <button class="btn-next-question">Next</button>
-            </div>
+                <button class="btn-next-question is--disable">Next</button>
+
+                <button class="btn-restart-quiz is--disable">
+                    <img class="btn-restart-quiz__icon" src="./assets/icon-restart.svg" alt="">
+                    
+
+                </button>
+
+            </footer>
 
         </div>
 
     </main>
-
-    <footer>
-
-    </footer>
 
     
     <script src="./scripts/app.js"></script>

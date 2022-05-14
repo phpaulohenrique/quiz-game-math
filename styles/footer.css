@@ -1,0 +1,13 @@
+
+
+.footer__control-buttons {
+
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8rem;
+    /* margin: 0 auto; */
+
+}
