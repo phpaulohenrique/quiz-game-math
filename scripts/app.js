@@ -2,7 +2,7 @@ const questions = [
 
     {
         numQuestion: 1,
-        question: "5 + 5?",
+        question: "How much is 5 + 5?",
         alternatives : {
             alternativeA: "10",
             alternativeB: "15",
@@ -13,7 +13,7 @@ const questions = [
     {
 
         numQuestion: 2,
-        question: "2 + 2?",
+        question: "How much is 2 + 2?",
         alternatives : {
 
             alternativeA: "6",
@@ -25,42 +25,65 @@ const questions = [
     {
 
         numQuestion: 3,
-        question: "5 + 20?",
+        question: "How much is 5 + 20?",
         alternatives : {
             
             alternativeA: "10",
-            alternativeB: "30",
-            alternativeC: "25",
+            alternativeB: "25",
+            alternativeC: "30",
             correct: "25",
+        }
+
+    },
+    {
+
+        numQuestion: 4,
+        question: "How much is 5 * 20?",
+        alternatives : {
+            
+            alternativeA: "120",
+            alternativeB: "80",
+            alternativeC: "100",
+            correct: "100",
+        }
+
+    },
+        {
+
+        numQuestion: 5,
+        question: "How much is 150 - 22?",
+        alternatives : {
+            
+            alternativeA: "132",
+            alternativeB: "128",
+            alternativeC: "138",
+            correct: "128",
         }
 
     },
 ]
 
 
-let assessment = 0; // pontuação
-let scoreboard = 0; // placar
 
 // QUESTIONS
 const sectionAlternativesQuestion = document.querySelector('.section__alternatives-question');
-
 let numQuestion = document.querySelector("#section__question__num-question");
 let question = document.querySelector("#section__question__text-question");
 let alternatives = document.querySelector("#alternatives");
 
-const btnNext = document.querySelector('.btn-next-question')
-const btnStartQuiz = document.querySelector(".btn-start-quiz");
-const btnRestartQuiz = document.querySelector(".btn-restart-quiz");
-
-let btnAnswerClicked = null;
-
-// ALTERNATIVAS
+// ALTERNATIVES
 let a = document.querySelector("#a");
 let b = document.querySelector("#b");
 let c = document.querySelector("#c");
 
-const CLICK = "click";
+const btnNext = document.querySelector(".btn-next-question");
+const btnStartQuiz = document.querySelector(".btn-start-quiz");
+const btnRestartQuiz = document.querySelector(".btn-restart-quiz");
 
+const CLICK = "click";
+let btnAnswerClicked = null;
+let assessment = 0; // pontuação
+let scoreboard = 0; // placar
 const totalQuestions = questions.length;
 
 
@@ -155,6 +178,7 @@ const resetButtonColorAnswerCorretOrIncorret = () =>{
     btnAnswerClicked.classList.remove("is--correct", "is--incorrect");
 }
 
+
 const nextQuestion = (event) => {
 
     // console.log(event)
@@ -165,6 +189,14 @@ const nextQuestion = (event) => {
     numCurrentQuestion = document.querySelector('#section__question__num-question').innerText;    
     numCurrentQuestionNumber = parseFloat(numCurrentQuestion);
     console.log(numCurrentQuestionNumber);
+
+    // const currentQuestionPositionQuestionsArray = numCurrentQuestionNumber;
+    // console.log(currentQuestionPositionQuestionsArray);
+
+    // below i am put +1, because i want to know if the next question is the last one, if it is i will disable the  "next" button
+    if(totalQuestions == numCurrentQuestionNumber + 1){
+        btnNext.classList.add("is--disable")
+    }
 
     nextPositionQuestionArray = numCurrentQuestionNumber;
 

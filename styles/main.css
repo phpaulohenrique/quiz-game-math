@@ -1,22 +1,13 @@
-
-
-/* h2 {
-    font-size: 1.3rem;
-    margin-bottom: 30px;
-} */
-
-
 .main__container-question {
 
-    background-color: rgba(105, 105, 105, 0.3);
+    background-color: rgba(44, 44, 44, 0.8);
 
     padding: 10px 20px;
     
-    
     text-align: center;
     width: 90%;
-    height: 70vh;
-    max-height: 90vh;
+    height: auto;
+    max-height: 75vh;
     border: 1px solid rgb(255, 255, 255);
     position: absolute;
     /* margin: 0 auto; */
@@ -27,28 +18,26 @@
     border-radius: 10px;
     margin-top: 3rem;
 
-
 }
 
 #section__question__num-question {
 
     background-color: rgba(37, 37, 37, 0.3);
     width: 100%;
-    /* color: rgb(0, 125, 163); */
-    font-size: 2rem;
+    font-size: 1.7rem;
     display: inline-block;
     font-weight: 600;
     padding: .7rem 1.4rem;
-    /* margin: .2rem 0; */
     border-radius: 1.5rem;
 
 }
 
 #section__question__text-question{
 
-    font-size: 1.9rem;
+    font-size: 2.3rem;
     padding: 1.3rem .5rem;
     margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 #alternatives {
@@ -65,16 +54,16 @@
 button{
 
     background-color: rgba(255, 255, 255, 0.7);
-    color: rgb(36, 0, 119) !important;
-    border: 1.5px solid rgba(0, 255, 98, 0.7);
+    color: rgb(0, 0, 0) !important;
+    border: 2px solid rgba(104, 17, 138, 0.7);
     
     font-size: 2.3rem;
     padding: 10px 5px;
     /* margin: 1.5rem; */
-    border-radius: 10px;
+    border-radius: 1rem;
     /* width: 90%; */
     height: 5.5rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 2px;
     border-radius: 1.5rem;
 }
@@ -93,14 +82,12 @@ button.alternatives__answer-button {
 
 
 button:hover {
-
     cursor: pointer;
 }
 
-
 button.btn-start-quiz{
 
-    width: 80%;
+    width: 70%;
     height: 5rem;
     font-size: 2rem;
     top: 50%;
@@ -108,32 +95,31 @@ button.btn-start-quiz{
     left: 50%;
     transform: translate(-50%, -50%) ;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
 
 }
 
 
 .btn-next-question {
-
     
     color: black !important;
+    background-color: rgb(131, 165, 218) !important;
     font-size: 1.8rem;
-    width: 45%;
+    width: 32%;
     height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin: 0 auto; */
-    /* margin-top: 5rem; */
     font-weight: 500;
     text-transform: uppercase;
     margin: 0;
+    border: none;
 
 }
 
 .btn-restart-quiz{
 
-    background-color: rgb(131, 233, 247);
+    background-color: rgb(136, 136, 136);
     border: none;
 
     font-size: 1.4rem;
@@ -141,15 +127,14 @@ button.btn-start-quiz{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 15%;
+    width: 18%;
     margin: 0;
     height: 4rem;
 
 }
 .btn-restart-quiz__icon{
     width:2rem;
-    /* margin-right: 2rem; */
-    /* height: */
+
 
 }
 
