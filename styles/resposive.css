@@ -1,0 +1,24 @@
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+
+    .main__container-question{
+
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1001px){
+
+    .main__container-question {
+    
+        width: 45%;
+    }
+
+}
+
+@media only screen and (min-width: 1300px) {
+
+    .main__container-question {
+        width: 35%;
+    }
+
+}
